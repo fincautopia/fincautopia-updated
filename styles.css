@@ -6,6 +6,7 @@ body {
     color: #333;
     background-color: #f4f4f4;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
@@ -175,4 +176,53 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    #hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero-section p {
+        font-size: 1rem;
+    }
+
+    #hero-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    .content-grid, .card-grid {
+        display: block;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
 }
