@@ -47,7 +47,8 @@ a {
 #hero-section h1 {
     font-size: 4rem;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #hero-section p {
@@ -204,7 +205,7 @@ footer {
         padding: 12px 24px;
     }
     .content-grid, .card-grid {
-        display: block;
+        display:block;
     }
     .parallax {
         background-attachment: scroll;
