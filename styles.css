@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -25,6 +25,7 @@ a {
     border-radius: 5px;
     font-size: 1.2rem;
     margin-top: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -46,14 +47,11 @@ a {
 
 #hero-section h1 {
     font-size: 4rem;
-    margin: 0;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #hero-section p {
     font-size: 1.5rem;
-    margin-top: 1rem;
 }
 
 /* Navbar */
@@ -94,6 +92,7 @@ section {
     display: flex;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .content-grid img {
@@ -123,11 +122,7 @@ section {
     object-fit: cover;
 }
 
-.card h3 {
-    margin: 1rem;
-}
-
-.card p {
+.card h3, .card p {
     margin: 1rem;
 }
 
@@ -205,7 +200,7 @@ footer {
         padding: 12px 24px;
     }
     .content-grid, .card-grid {
-        display:block;
+        display: block;
     }
     .parallax {
         background-attachment: scroll;
